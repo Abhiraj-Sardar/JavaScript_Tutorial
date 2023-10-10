@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // bigInt-the "n" at the end means it's a BigInt
+    const bigInt = 1234567890123456789012345678901234567890n;
+    alert(bigInt);
+    alert( 1 / 0 ); // Infinity
+    alert( "not a number" / 2 ); // NaN, such division is erroneous
+    alert( NaN + 1 ); // NaN
+    alert( 3 * NaN ); // NaN
+    alert( "not a number" / 2 - 1 ); // NaN
+
+    //Strings
+    let str="Hello"
+    let greetings=`I am Abhiraj Sardar...${str}`;
+    alert(greetings)//I am Abhiraj Sardar...Hello
+    alert(`The Sum is:${1+2+3}`);//The Sum is:6
+
+    //Booleans
+    let decision=true;
+    let dec=false;
+    let val=3<1;
+    alert(val);//false
+
+    //undefined
+    let a;
+    alert(a);//undefined
+    let b=null;
+    alert(b);//null
+    
+    //Typeof operator
+    alert(typeof a);//undefined
+    alert(typeof b);//object
+    alert(typeof undefined); // "undefined"
+    alert(typeof 0); // "number"
+    alert(typeof 10n); // "bigint"
+    alert(typeof true); // "boolean"
+    alert(typeof "foo"); // "string"
+    alert(typeof Symbol("id")); // "symbol"
+    alert(typeof Math); // "object"  (1)
+    alert(typeof null); // "object"  (2)
+    alert(typeof alert); // "function"  (3)
+    </script>
+</body>
+</html>
