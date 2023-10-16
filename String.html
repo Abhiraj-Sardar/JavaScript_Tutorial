@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let gfg = 'GFG '; 
+            let geeks = 'stands-for-GeeksforGeeks'; 
+
+            // Print the string as it is 
+            console.log(gfg); 
+            console.log(geeks); 
+
+            // concat() method 
+            console.log(gfg.concat(geeks)); //GFG stands-for-GeeksforGeeks
+
+            // match() method 
+            console.log(geeks.match(/eek/)); //["eek"]
+
+            // charAt() method 
+            console.log(geeks.charAt(5)); //s
+
+            // valueOf() method 
+            console.log(geeks.valueOf()); //stands-for-GeeksforGeeks
+
+            // lastIndexOf() method 
+            console.log(geeks.lastIndexOf('for')); //16
+
+            // substr() method 
+            console.log(geeks.substr(6)); //-for-GeeksforGeeks
+
+            // indexOf() method 
+            console.log(gfg.indexOf('G')); //0
+
+            // replace() method 
+            console.log(gfg.replace('FG', 'fg')); //Gfg
+
+            // slice() method 
+            console.log(geeks.slice(2, 8)); //ands-f
+
+            // split() method 
+            console.log(geeks.split('-')); //["stands","for","GeeksforGeeks"]
+
+            // toUpperCase method 
+            console.log(geeks.toUpperCase(geeks)); //STANDS-FOR-GEEKSFORGEEKS
+
+            // toLowerCase method 
+            console.log(geeks.toLowerCase(geeks));//stands-for-geeksforgeeks 
+
+    </script>
+</body>
+</html>

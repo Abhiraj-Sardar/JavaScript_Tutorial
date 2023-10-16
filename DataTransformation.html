@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+            const num = [16, 25]; 
+
+            /* Using JS map() Method */
+            console.log(num.map(Math.sqrt)); //[4,5]
+
+            const ages = [19, 37, 16, 42]; 
+
+            /* Using JS filter() Method */
+            console.log(ages.filter(checkAdult)); //[19,37,42]
+
+            function checkAdult(age) { 
+                return age >= 18; 
+            } 
+
+            /* Using JS reduce() Method */
+            const numbers = [165, 84, 35]; 
+            console.log(numbers.reduce(myFunc)); //46
+
+            function myFunc(total, num) { 
+                return total - num; 
+            } 
+            
+
+
+
+    </script>
+</body>
+</html>

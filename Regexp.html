@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         Let us look at how JavaScript allows Regular Expressions:
+
+// Regular Expression Modifiers : Modifiers can be used to perform multiline searches. Some of the pattern modifiers that are allowed in JavaScript:
+
+// Modifiers	Description
+// [abc]	Find any of the character inside the brackets
+// [0-9]	Find any of the digits between the brackets 0 to 9
+// (x/y)	Find any of the alternatives between x or y separated with |
+// Regular Expression Patterns :Metacharacters are characters with a special meaning. Some of the metacharacters that are allowed in JavaScript:
+
+// Metacharacters	Description
+// .	Used for finding a single character, except newline or line terminator
+// \d	Used to find a digit.
+// \s	Used to find a whitespace character
+// \uxxxx	Used to find the Unicode character specified by the hexadecimal number
+// Quantifiers define quantities. They provide the minimum number of instances of a character, group, or character class in the input required to find a match. Some of the quantifiers allowed in JavaScript are:
+
+// Quantifiers	Description
+// n+	Used to match any string that contains at least one n
+// n*	Used to match any string that contains zero or more occurrences of n
+// n?	Used to matches any string that contains zero or one occurrences of n
+// n{x}	Matches strings that contain a sequence of X n’s
+// ^n	Matches strings with n in the first place
+// Here is an example to help you understand regular expression better.
+
+// You can also use regEx() to create regular expression in javascript:
+
+// A regular expression is a sequence of characters that forms a search pattern. The search pattern can be used for text search and text to replace operations. A regular expression can be a single character or a more complicated pattern.
+
+// Syntax: /pattern/modifiers;
+// const regex1 = /^ab/;
+// const regex2 = new Regexp('/^ab/');
+        // Program to validate the email address 
+        function validateEmail(email) { 
+
+        // Regex pattern for email 
+        const re = /\S@\S+\.+\S/g; 
+
+        // Check if the email is valid 
+        let result = re.test(email); 
+
+        if (result) { 
+            console.log("The email is valid."); 
+        } else { 
+            console.log("The email is not valid."); 
+        } 
+        } 
+
+        // Input Email Id 
+        let email = "abc@gmail.com"
+        validateEmail(email); //The email is valid.
+
+        email = "abc#$#@45com"
+        validateEmail(email); //The email is not valid.
+
+    </script>
+</body>
+</html>
